@@ -5,47 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/Css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 </head>
 <body>
-    <ul id=menu>
-        <li>
-            <a href="index.html"> Home</a>
-        </li>
-        <li>
-            <a href="Contato.html">Contato</a>
-        </li>
-    </ul>
+    <footer class="colorsup">
+        <ul id="menu" class="center">
+            <li>
+                <a href="index.html"> Home</a>
+            </li>
+            <li>
+                <a href="Contato.html">Contato</a>
+            </li>
+        </ul>
+     </footer>
+     <hr>
     <h1 class="center">Entre em contato Comigo</h1>
     <div class="container">
-        <form class="center">
+        <form>
             <label for="nome">Nome:</label><br>
-            <input type="text"id="nome">
-            <br>
+            <input type="text" id="nome" onkeyup='validaNome()'>
+            <div id='txtNome'></div>
             <br>
             <label for="email">E-mail:</label><br>
-            <input type="email"id="email">
-            <br>
+            <input type="email"id="email" onkeyup='validaEmail()'>
+            <div id='txtEmail'></div>
             <br>
             <label for="assunto">Assunto:</label><br>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="assunto" id="assunto" cols="30" rows="10" onkeyup='validaAssunto()'></textarea>
+            <div id='txtAssunto'></div>
             <br>
-            <br>
-            <button>Enviar</button>
+            <button onclick="enviar()">Enviar</button>
         </form>
    
-        <div class="ml-50">
-            <h3>Minha Localização</h3>
+        <div class="ml-50 md-50" >
+            <h3 class="center">Minha Localização</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191284.83859361877!2d-46.52129854266689!3d-23.515140714073553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1069d11d1%3A0xcb936109af9ce541!2sParque%20Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1621350576542!5m2!1spt-BR!2sbr" 
             width="600" height="450" 
             style="border:0;" 
             allowfullscreen="" 
-            loading="lazy"></iframe>
+            loading="lazy"
+            id = 'mapa'
+            onmousemove="mapaZoom()"
+            onmouseout="mapaNormal()">
+        </iframe>
         </div>
     </div>
     <hr>
-    <footer>
+    <footer class="colorsdonw">
         <div class="container">
             <a href="https://github.com/RodrigoPDias" target="_blank">
                 <img class="tm-social" src="assets/img/github.png" alt="Logo do GitHub">
@@ -60,6 +67,6 @@
         </p>
     </footer>
 
-   
+   <script src="./assets/js/script.js"></script>
 </body>
 </html>

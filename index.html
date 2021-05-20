@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/Css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 </head>
-<ul id="menu">
+<footer class="colorsup">
+<ul id="menu" class="center">
     <li>
         <a href="index.html"> Home</a>
     </li>
@@ -17,11 +18,13 @@
         <a href="Contato.html">Contato</a>
     </li>
 </ul>
+</footer>
+<hr>
 <body>
     <h1 class="center"> Sobre o Rodrigo</h1>
     <div class="container">
     <div>
-        <img id=eu src="assets/img/me (2).png"Foto do Criador desse Blog" height="200" width="200"> 
+        <img id=eu  class="colorsimg" src="assets/img/me (2).png"Foto do Criador desse Blog height="200" width="200"> 
     </div>
     
     <div>
@@ -46,14 +49,34 @@
 
 
    <div class="container" >   
-    <iframe  width="560" height="315" src="https://www.youtube.com/embed/zm3IBGxHL3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe
+    id = video
+     iframe width="560" 
+     height="315" 
+     src="https://www.youtube.com/embed/pfA5UqEU_80" title="YouTube video player" 
+     frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+     allowfullscreen
+     onmousemove="videoZoom()"
+     onmouseout="videoNormal()"></iframe>
     </div>
     <h3 class="center">Meu jogo Favorito</h3>
     <div class="container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/JqlbDJIPXwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe
+        id = video2
+         width="560"
+         height="315" 
+         src="https://www.youtube.com/embed/JqlbDJIPXwo" 
+         title="YouTube video player" 
+         frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+         allowfullscreen
+         onmousemove="videoZoom2()"
+         onmouseout="videoNormal2()">
+        </iframe>
     </div>
     <hr>
-    <footer>
+    <footer class="colorsdonw">
         <div class="container">
             <a href="https://github.com/RodrigoPDias" target="_blank">
                 <img class="tm-social" src="assets/img/github.png" alt="Logo do GitHub">
@@ -67,5 +90,6 @@
             Todos os direitos reservados: Rodrigo Dias &COPY
         </p>
     </footer>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
