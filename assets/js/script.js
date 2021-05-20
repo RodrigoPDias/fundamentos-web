@@ -6,10 +6,7 @@ let nomeOk = false
 let emailOK = false
 let assuntoOK = false
 let mapa =document.querySelector('#mapa')
-let video = document.querySelector('#video')
-
-nome.style.width = '100%'
-email.style.width = '100%'
+const btnMobile = document.getElementById('btn-mobile');
 
 function validaNome() {
     let txt = document.querySelector('#txtNome')
@@ -70,21 +67,19 @@ function mapaNormal() {
     mapa.style.width = '600px'
     mapa.style.height = '450px'
 }
-function videoZoom() {
-    video.style.width = '800px'
-    video.style.height = '600px'
+//menujs
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+  }
 }
 
-function videoNormal() {
-    video.style.width = '600px'
-    video.style.height = '450px'
-}
-function videoZoom2() {
-    video2.style.width = '800px'
-    video2.style.height = '600px'
-}
-
-function videoNormal2() {
-    video2.style.width = '600px'
-    video2.style.height = '450px'
-}
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
