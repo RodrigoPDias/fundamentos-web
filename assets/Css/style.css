@@ -32,6 +32,7 @@ body {
 .meupit{
   padding: 20px;
   text-align: justify;
+  font-size: clamp(1.75, 1em +3vw,  2.5em);
 }
 .tm-social{
   width: 50px;
@@ -54,9 +55,7 @@ margin-bottom: 100px;
 .colorsdonw{
 background-color: #0566A3 ;
 }
-.colorsup{
-background-color: #0566A3 ;
-}
+
 .colorsimg{
 background-color: #DCEBF1 ;
 }
