@@ -1,64 +1,42 @@
 /*
 Estilo da pagina index
 */
-body {
-  font-family: 'Pattaya', sans-serif;
-  background: #1B8BB8;
-  
-}
-.center{
-  text-align: center;
-}
-.container{
-  display: flex;
-  flex-flow: row ;
-  justify-content: center;
-  align-items: center;
-}
-#menu li{
-  display: inline;
-  padding: 15px;
-  text-align: center;
-}
-
-#menu li a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-}
-#menu li a:hover{
-    color: #DCEBF1;
-}
-.meupit{
-  padding: 20px;
-  text-align: justify;
-  font-size: clamp(1.75, 1em +3vw,  2.5em);
-}
 .tm-social{
   width: 50px;
-  height: 50px;
-  padding: 30px;
+ height: 50px;
+ }
+body{
+  font-family: 'Pattaya', sans-serif;
 }
 
-/*
-estilos da pagina Contato
-*/
-.ml-50{
-margin-left: 50px;
-}
-.mr-50{
-margin-right: 50px;
-}
-.md-50{
-margin-bottom: 100px;
-}
-.colorsdonw{
-background-color: #0566A3 ;
+.gradient {
+  
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(50deg, #DCEBF1, #5BC3FA, #86c3f0, #1744FA);
+  background-size: 300% 300%;
+  animation: colors 15s ease infinite;
 }
 
-.colorsimg{
-background-color: #DCEBF1 ;
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
+
+@media (max-width: 600px) {
+  .text {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+}
+
 /*style menu*/
 body,
 ul {

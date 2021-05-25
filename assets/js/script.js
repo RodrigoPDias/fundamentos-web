@@ -5,7 +5,6 @@ let assunto = document.querySelector('#assunto')
 let nomeOk = false
 let emailOK = false
 let assuntoOK = false
-let mapa =document.querySelector('#mapa')
 const btnMobile = document.getElementById('btn-mobile');
 
 function validaNome() {
@@ -58,15 +57,7 @@ function enviar() {
     }
 }
 
-function mapaZoom() {
-    mapa.style.width = '800px'
-    mapa.style.height = '600px'
-}
 
-function mapaNormal() {
-    mapa.style.width = '600px'
-    mapa.style.height = '450px'
-}
 //menujs
 function toggleMenu(event) {
   if (event.type === 'touchstart') event.preventDefault();

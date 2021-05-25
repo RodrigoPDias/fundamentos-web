@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="./assets/Css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+      body{
+      font-family: 'Pattaya', sans-serif;
+      }
+    </style>
+     
 </head>
-<body>
+<body class="gradient">
+    <!--menu-->
     <header id="header">
         <a id="logo" href="index.html">R</a>
         <nav id="nav">
@@ -22,15 +30,22 @@
           </ul>
         </nav>
       </header>
-    <h1 class="center"> Sobre o Rodrigo</h1>
-    <div class="container">
-    <div>
-        <img id=eu  class="colorsimg" src="assets/img/me (2).png"Foto do Criador desse Blog height="200" width="200"> 
-    </div>
+    <h1 style="text-align: center;"> Sobre o Rodrigo</h1>
     
-    <div>
-        <h2 class="center">Meu Pit</h2>
-        <p class= "meupit">
+    <div class="container">
+    <!--menu-->
+    <!--pit-->
+    
+ <div class="container">
+    <div class="row d-flex ">
+        <div class="col-md-4">
+            <img id=eu  class="colorsimg rounded mx-auto d-block mt-5" src="assets/img/me (2).png"Foto do Criador desse Blog height="200" width="200"> 
+        </div >
+        <div class= "col-md-8">
+         
+          <h2 style="text-align: center;">Meu pit</h2>
+        <p  class="mb-5" style="text-align: justify;">
+      
             Oi eu sou Rodrigo tenho 20 anos e moro no estremo da zona leste,
             desde pequeno sempre fui apaixonado por literatura e tecnologia,
             em qualquer formato sejam por filmes, jogos, series ou livros e com o tempo os gostos se tornaram um só,
@@ -44,49 +59,59 @@
              para alcançar meus objetivos de aprender sobre machine learning, big Data e  de finalmente  trabalhar com que sonho há robótica, e ajudar a criar algo toque as estrelas.
              esse é meu pit, sintam-se à-vontade para me fazer perguntas.
         </p>
+      </div>
     </div>
 </div>
-    <h3 class="center">Minha sondtrack Favorita</h3>
+</div>
+<div class="jumbotron jumbotron-fluid" style="background: #DCEBF1;">
+  <div class="container">
+    <h1 class="display-4">Rodrigo Dias</h1>
+    <p class="lead font-weight-bold">Aluno Unibes- Aluno de Generation- Desenvolvedor java(Developer Java)</p>
+  </div>
+</div>
+    <h3 class="mb-5" style="text-align: center;">Minha sondtrack Favorita</h3>
 
 
-   <div class="container" >   
-    <iframe
-    id = video
-     iframe width="560" 
-     height="315" 
-     src="https://www.youtube.com/embed/pfA5UqEU_80" title="YouTube video player" 
-     frameborder="0" 
-     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-     allowfullscreen></iframe>
-    </div>
-    <h3 class="center">Meu jogo Favorito</h3>
-    <div class="container">
-        <iframe
-        id = video2
-         width="560"
-         height="315" 
-         src="https://www.youtube.com/embed/JqlbDJIPXwo" 
-         title="YouTube video player" 
-         frameborder="0" 
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-         allowfullscreen>
-        </iframe>
-    </div>
-    <hr>
-    <footer class="colorsdonw">
-        <div class="container">
-            <a href="https://github.com/RodrigoPDias" target="_blank">
-                <img class="tm-social" src="assets/img/github.png" alt="Logo do GitHub">
-            </a>
-           <a href="https://www.linkedin.com/in/rodrigo-pereira-dias-904698153/" target="_blank">
-            <img class="tm-social" src="assets/img/linkedin.png" alt="Logo do linkedin">
-        </a>
-            
+   <div class="container" >  
+    <div class="row mb-5">
+        <div class="col-md-6">
+         <h3 style="text-align: center;">Minha sondtrack Favorita</h3>
+         <div class="embed-responsive embed-responsive-21by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pfA5UqEU_80"></iframe>
         </div>
-        <p class="center">
-            Todos os direitos reservados: Rodrigo Dias &COPY
-        </p>
-    </footer>
+        </div>
+    
+    <div class="col-md-6">
+      <h3 style="text-align: center;">Meu jogo Favorito</h3>
+      <div class="embed-responsive embed-responsive-21by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JqlbDJIPXwo"></iframe>
+      </div>
+        </div>
+    </div>
+</div>
+    <hr>
+    <div>
+      <footer >
+       <div class="row ">
+         <div class="col-md-12  d-flex justify-content-center mb-2">
+           
+            <a href="https://github.com/RodrigoPDias" target="_blank">
+            <img class="tm-social mr-2 mt-5" src="assets/img/github.png" alt="Logo do GitHub">
+           </a>
+            <a href="https://www.linkedin.com/in/rodrigo-pereira-dias-904698153/" target="_blank">
+            <img class="tm-social mt-5" src="assets/img/linkedin.png" alt="Logo do linkedin">
+            </a>
+         </div>
+           <div class="col-md-12">
+             <p class="text-center">
+               Todos os direitos reservados: Rodrigo Dias &COPY
+           </p>
+           </div>
+   </footer >
+   </div>
     <script src="./assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
